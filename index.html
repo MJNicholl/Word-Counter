@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Helper</title>
+    <link rel="stylesheet" href="style.css" >
+</head>
+<body>
+    <h2>Erase the example below and type or paste a text</h2>
+    <textarea id="inputArea" placeholder="Type or paste text here to count the most frequent words"></textarea>
+    <p>Words to exclude from search</p>
+    <textarea id="exclude" placeholder="words to be exclude from the search"></textarea>
+    <p>Select a text or Type below to Count a Specific Word Instead</p>
+    <textarea id="specific" placeholder="you can search for a specific word instead"></textarea>
+    <br>
+    <button id="reset" onclick={ResetExclusionList()}>Reset List of Words to Exclude</button>
+    <button id="button" onclick={Main()}>Count Words</button>
+    <fieldset>
+        <legend>Result</legend>
+        <p id="resultArea"></p>
+    </fieldset>
+    <div id="wordInfo"></div>
+    <footer></footer>
+
+    <script src="wordHelper.js"></script>
+</body>
+</html>

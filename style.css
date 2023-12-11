@@ -1,0 +1,57 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    background-color: aliceblue;
+}
+
+body, textarea, p, button, footer {
+    margin-bottom: 40px;
+}
+
+h2 {
+    padding-top: 40px;
+}
+
+p, fieldset {
+    margin: 10px 80px;
+}
+
+fieldset, legend {
+    border: 1px solid black;
+}
+
+legend {
+    border-top: none;
+    border-bottom: none;
+    margin-left: 50px;
+    padding: 5px;
+}
+
+#wordInfo {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    visibility: hidden;
+    transition: 1s;
+    padding: 10px;
+    background-color: darkgray;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+}
+
+textarea {
+    width: 80%;
+}
+
+#inputArea {
+    min-height: 200px;
+}
